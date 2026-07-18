@@ -3,7 +3,7 @@
  * Plugin Name:       DB Food Info
  * Plugin URI:        https://www.davidebertolino.it/progetti/db-food-info/
  * Description:       Informazioni alimentari conformi al Reg. UE 1169/2011 per prodotti WooCommerce: ingredienti con allergeni evidenziati, tassonomia dei 14 allergeni, dichiarazione nutrizionale, JSON-LD e blocco di pubblicazione per prodotti incompleti. Niente servizi esterni, niente tracciamento, niente nag.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Requires at least: 5.8
  * Requires PHP:      7.4
  * Author:            Davide Bertolino
@@ -21,7 +21,7 @@ if (!defined('ABSPATH')) exit;
 /* -------------------------------------------------------------------------
  * Costanti
  * ---------------------------------------------------------------------- */
-define('DBFI_VERSION',     '1.1.0');
+define('DBFI_VERSION',     '1.1.1');
 define('DBFI_PLUGIN_FILE', __FILE__);
 define('DBFI_PLUGIN_DIR',  plugin_dir_path(__FILE__));
 define('DBFI_PLUGIN_URL',  plugin_dir_url(__FILE__));

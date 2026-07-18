@@ -26,6 +26,7 @@ class DBFI_Frontend {
         add_action('woocommerce_single_product_summary', array($this, 'render_box'), 25);
         add_filter('woocommerce_structured_data_product', array($this, 'jsonld'), 10, 2);
         add_shortcode('dbfi_legenda_allergeni', array($this, 'legend_shortcode'));
+        add_shortcode('dbfi_info_prodotto', array($this, 'box_shortcode'));
         add_action('wp_enqueue_scripts', array($this, 'enqueue'));
     }
 
@@ -57,10 +58,16 @@ class DBFI_Frontend {
 
     /**
      * Box "Informazioni alimentari" sulla pagina prodotto.
+     *
+     * @param int $product_id Facoltativo: ID prodotto. Default: post corrente.
      */
-    public function render_box() {
-        global $post;
-        $id  = $post->ID;
+    public function render_box($product_id = 0) {
+        $id = absint($product_id);
+        if (!$id) {
+            global $post;
+            if (!$post) return;
+            $id = $post->ID;
+        }
         $den = get_post_meta($id, '_dbfi_denominazione', true);
         $ing = get_post_meta($id, '_dbfi_ingredienti', true);
         if ('' === $den && '' === $ing) return; // Prodotto non alimentare o non compilato.
@@ -81,6 +88,10 @@ class DBFI_Frontend {
         }
         if ($ing) {
             echo '<p class="dbfi-row"><span class="dbfi-label">' . esc_html__('Ingredienti:', 'db-food-info') . '</span> ' . wp_kses_post(self::format_ingredients($ing)) . '</p>';
+            // Legenda automatica: solo se almeno un allergene è marcato nel testo.
+            if (preg_match('/\*[^*\n]+\*/u', $ing)) {
+                echo '<p class="dbfi-row dbfi-bold-note">' . esc_html__('Gli allergeni sono evidenziati in grassetto.', 'db-food-info') . '</p>';
+            }
         }
 
         if ($terms && !is_wp_error($terms)) {
@@ -170,6 +181,25 @@ class DBFI_Frontend {
         }
         $markup['additionalProperty'] = $props;
         return $markup;
+    }
+
+    /**
+     * [dbfi_info_prodotto id=""] — renderizza il box informazioni alimentari
+     * ovunque (pagine costruite con page builder che bypassano gli hook
+     * WooCommerce, landing, schede fuori dal loop).
+     *
+     * Senza id usa il prodotto corrente.
+     *
+     * @param array $atts Attributi shortcode.
+     * @return string
+     */
+    public function box_shortcode($atts) {
+        $atts = shortcode_atts(array('id' => 0), $atts, 'dbfi_info_prodotto');
+        wp_enqueue_style('dbfi-frontend', DBFI_PLUGIN_URL . 'assets/css/frontend.css', array(), DBFI_VERSION);
+
+        ob_start();
+        $this->render_box(absint($atts['id']));
+        return ob_get_clean();
     }
 
     /**

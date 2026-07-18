@@ -23,6 +23,7 @@ Built for Italian artisan food producers, farms and SMEs selling online.
 - **Explicit allergen assessment**: "no allergens" is a conscious declaration (checkbox), never an omission
 - **JSON-LD**: ingredients and allergens added to the WooCommerce product structured data
 - `[dbfi_legenda_allergeni]` shortcode: allergen legend with product counts and archive links
+- `[dbfi_info_prodotto id=""]` shortcode: render the food-info box anywhere (page-builder-proof)
 
 ### Privacy by Design
 - No personal data processed, no cookies, no external services on the front end
@@ -81,6 +82,11 @@ Il plugin non tratta dati personali, non imposta cookie e non contatta servizi e
 **Nota di conformità**: il plugin è uno strumento tecnico; la correttezza di ricette, allergeni e tracce resta responsabilità dell'operatore del settore alimentare (art. 8). L'esenzione dalla dichiarazione nutrizionale (Allegato V, p. 19) va valutata con un consulente, in particolare per la vendita online.
 
 ## Changelog
+
+### 1.1.1 — 2026-07
+- Nuovo shortcode `[dbfi_info_prodotto id=""]`: renderizza il box informazioni alimentari ovunque — pensato per temi e page builder che bypassano gli hook WooCommerce (senza `id` usa il prodotto corrente)
+- Legenda automatica "Gli allergeni sono evidenziati in grassetto" sotto l'elenco ingredienti, mostrata solo quando almeno un allergene è marcato
+- `render_box()` accetta ora un ID prodotto esplicito
 
 ### 1.1.0 — 2026-07
 - Allineamento completo alle convenzioni DB Plugin Suite: bootstrap con `DBFI_Core` singleton, updater canonico condiviso, `db-admin-ui.css` ufficiale

@@ -51,3 +51,9 @@
 	font-weight: 400;
 }
 .dbfi-count { color: #5a5a5a; }
+.dbfi-bold-note {
+	font-size: 0.85em;
+	color: #5a5a5a;
+	font-style: italic;
+	margin-top: -0.15em;
+}

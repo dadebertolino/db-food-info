@@ -6,14 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: DB Food Info 1.1.0\n"
+"Project-Id-Version: DB Food Info 1.1.1\n"
 "Report-Msgid-Bugs-To: info@davidebertolino.it\n"
-"POT-Creation-Date: 2026-07-18 14:33+0000\n"
+"POT-Creation-Date: 2026-07-18 15:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
-"X-Domain: db-food-info\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -186,59 +185,63 @@ msgstr ""
 msgid "Salva impostazioni"
 msgstr ""
 
-#: inc/class-frontend.php:77
+#: inc/class-frontend.php:84
 msgid "Informazioni alimentari"
 msgstr ""
 
-#: inc/class-frontend.php:80
+#: inc/class-frontend.php:87
 msgid "Denominazione:"
 msgstr ""
 
-#: inc/class-frontend.php:83
+#: inc/class-frontend.php:90
 msgid "Ingredienti:"
 msgstr ""
 
-#: inc/class-frontend.php:87
-msgid "Allergeni presenti:"
-msgstr ""
-
-#: inc/class-frontend.php:94
-msgid "Allergeni:"
-msgstr ""
-
-#: inc/class-frontend.php:94
-msgid "il prodotto non contiene allergeni dell'Allegato II Reg. UE 1169/2011."
+#: inc/class-frontend.php:93
+msgid "Gli allergeni sono evidenziati in grassetto."
 msgstr ""
 
 #: inc/class-frontend.php:98
+msgid "Allergeni presenti:"
+msgstr ""
+
+#: inc/class-frontend.php:105
+msgid "Allergeni:"
+msgstr ""
+
+#: inc/class-frontend.php:105
+msgid "il prodotto non contiene allergeni dell'Allegato II Reg. UE 1169/2011."
+msgstr ""
+
+#: inc/class-frontend.php:109
 msgid "Può contenere tracce di:"
 msgstr ""
 
-#: inc/class-frontend.php:101
+#: inc/class-frontend.php:112
 msgid "Quantità netta:"
 msgstr ""
 
-#: inc/class-frontend.php:104
+#: inc/class-frontend.php:115
 msgid "Conservazione:"
 msgstr ""
 
-#: inc/class-frontend.php:107
+#: inc/class-frontend.php:118
 msgid "Da consumarsi preferibilmente entro:"
 msgstr ""
 
-#: inc/class-frontend.php:113
+#: inc/class-frontend.php:124
 msgid "Operatore responsabile:"
 msgstr ""
 
-#: inc/class-frontend.php:131
+#: inc/class-frontend.php:142
 msgid "Dichiarazione nutrizionale (valori medi per 100 g)"
 msgstr ""
 
-#: inc/class-frontend.php:160
+#: inc/class-frontend.php:171
 msgid "Ingredienti"
 msgstr ""
 
-#: inc/class-frontend.php:167 inc/class-taxonomy.php:63
+#: inc/class-frontend.php:178 inc/class-taxonomy.php:63
 #: inc/class-taxonomy.php:65
 msgid "Allergeni"
 msgstr ""
