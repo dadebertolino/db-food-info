@@ -1,0 +1,10 @@
+/* DB Admin UI Design System — variabili condivise della suite.
+   Se disponi della versione canonica (references/ADMIN-UI.md), sostituisci. */
+:root {
+	--db-primary: #1b2a4a;
+	--db-accent: #0e7c7b;
+	--db-gold: #c9a227;
+	--db-bg: #f6f8fa;
+	--db-border: #d4dbe3;
+	--db-radius: 6px;
+}

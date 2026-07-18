@@ -1,0 +1,53 @@
+/* DB Food Info — pagina prodotto */
+.dbfi-box {
+	border: 1px solid #d4dbe3;
+	border-radius: 8px;
+	padding: 1em 1.25em;
+	margin: 1.25em 0;
+	background: #fafbfc;
+	font-size: 0.95em;
+}
+.dbfi-title {
+	font-size: 1.1em;
+	margin: 0 0 0.6em;
+}
+.dbfi-row { margin: 0.35em 0; }
+.dbfi-label { font-weight: 600; }
+.dbfi-allergen-word { font-weight: 700; text-transform: uppercase; }
+.dbfi-badges,
+.dbfi-legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4em;
+	list-style: none;
+	margin: 0.4em 0 0;
+	padding: 0;
+}
+.dbfi-badge {
+	border: 1px solid #d4dbe3;
+	border-radius: 999px;
+	padding: 0.15em 0.7em;
+	background: #fff;
+	white-space: nowrap;
+}
+.dbfi-tracce { font-style: italic; }
+.dbfi-osa { color: #5a5a5a; font-size: 0.9em; }
+.dbfi-nutrition-table {
+	margin: 0.75em 0;
+	border-collapse: collapse;
+	width: auto;
+	min-width: 60%;
+}
+.dbfi-nutrition-table caption {
+	text-align: left;
+	font-weight: 600;
+	margin-bottom: 0.3em;
+}
+.dbfi-nutrition-table th,
+.dbfi-nutrition-table td {
+	border: 1px solid #d4dbe3;
+	padding: 0.3em 0.7em;
+	text-align: left;
+	font-weight: 400;
+}
+.dbfi-count { color: #5a5a5a; }
