@@ -1,0 +1,320 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the DB Food Info package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DB Food Info 1.1.0\n"
+"Report-Msgid-Bugs-To: info@davidebertolino.it\n"
+"POT-Creation-Date: 2026-07-18 14:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"X-Domain: db-food-info\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: inc/class-privacy.php:42
+msgid ""
+"DB Food Info gestisce esclusivamente informazioni relative ai prodotti "
+"(ingredienti, allergeni, valori nutrizionali) ai fini del Reg. UE 1169/2011. "
+"Il plugin non raccoglie né tratta dati personali dei visitatori, non imposta "
+"cookie e non comunica con servizi esterni durante la navigazione. Non è "
+"pertanto necessaria alcuna integrazione nell'informativa privacy del sito."
+msgstr ""
+
+#: inc/class-core.php:47
+msgid "il plugin richiede WooCommerce attivo."
+msgstr ""
+
+#: inc/class-admin.php:45
+msgid "Denominazione legale dell'alimento"
+msgstr ""
+
+#: inc/class-admin.php:46
+msgid ""
+"Ingredienti (in ordine decrescente di peso — racchiudi gli allergeni tra "
+"asterischi: *nocciole*)"
+msgstr ""
+
+#: inc/class-admin.php:47
+msgid "Può contenere tracce di"
+msgstr ""
+
+#: inc/class-admin.php:48
+msgid "Quantità netta (es. 500 g)"
+msgstr ""
+
+#: inc/class-admin.php:49
+msgid "Modalità di conservazione"
+msgstr ""
+
+#: inc/class-admin.php:50
+msgid "Termine minimo di conservazione / scadenza (indicativo)"
+msgstr ""
+
+#: inc/class-admin.php:51
+msgid "Operatore del settore alimentare responsabile"
+msgstr ""
+
+#: inc/class-admin.php:62
+msgid "Energia (kJ / kcal)"
+msgstr ""
+
+#: inc/class-admin.php:63
+msgid "Grassi (g)"
+msgstr ""
+
+#: inc/class-admin.php:64
+msgid "di cui acidi grassi saturi (g)"
+msgstr ""
+
+#: inc/class-admin.php:65
+msgid "Carboidrati (g)"
+msgstr ""
+
+#: inc/class-admin.php:66
+msgid "di cui zuccheri (g)"
+msgstr ""
+
+#: inc/class-admin.php:67
+msgid "Proteine (g)"
+msgstr ""
+
+#: inc/class-admin.php:68
+msgid "Sale (g)"
+msgstr ""
+
+#: inc/class-admin.php:86
+msgid "Informazioni alimentari (Reg. UE 1169/2011)"
+msgstr ""
+
+#: inc/class-admin.php:100
+msgid ""
+"Compila i campi obbligatori (*): senza di essi il prodotto nelle categorie "
+"alimentari non potrà essere pubblicato. Gli allergeni racchiusi tra "
+"asterischi negli ingredienti verranno mostrati in grassetto sulla pagina "
+"prodotto, come richiesto dall'art. 21 del Regolamento."
+msgstr ""
+
+#: inc/class-admin.php:119
+msgid "Dichiarazione nutrizionale (per 100 g)"
+msgstr ""
+
+#: inc/class-admin.php:121
+msgid ""
+"facoltativa se applicabile l'esenzione All. V p. 19 (fornitura diretta "
+"locale in piccole quantità)"
+msgstr ""
+
+#: inc/class-admin.php:132
+msgid "Dichiaro che il prodotto non contiene allergeni"
+msgstr ""
+
+#: inc/class-admin.php:133
+msgid "dell'Allegato II (valutazione effettuata)"
+msgstr ""
+
+#: inc/class-admin.php:135
+msgid ""
+"Gli allergeni presenti vanno selezionati anche nel riquadro Allergeni nella "
+"colonna laterale: alimentano il riepilogo con icone e i filtri di ricerca. "
+"In assenza sia dei termini sia della dichiarazione qui sopra, il prodotto "
+"non sarà pubblicabile."
+msgstr ""
+
+#: inc/class-admin.php:210
+msgid "Valutazione allergeni (assegna i termini o dichiara l'assenza)"
+msgstr ""
+
+#: inc/class-admin.php:221
+msgid ""
+"prodotto riportato in bozza. Ai sensi del Reg. UE 1169/2011 le informazioni "
+"alimentari devono essere disponibili prima dell'acquisto. Campi mancanti:"
+msgstr ""
+
+#: inc/class-admin.php:265
+msgid "Operatore responsabile predefinito"
+msgstr ""
+
+#: inc/class-admin.php:268
+msgid ""
+"Ragione sociale e indirizzo dell'OSA (art. 8 Reg. 1169/2011). Precompila il "
+"campo sui nuovi prodotti."
+msgstr ""
+
+#: inc/class-admin.php:272
+msgid "Blocco di pubblicazione"
+msgstr ""
+
+#: inc/class-admin.php:274
+msgid "Applica a tutti i prodotti"
+msgstr ""
+
+#: inc/class-admin.php:275
+msgid "Oppure limita alle categorie alimentari:"
+msgstr ""
+
+#: inc/class-admin.php:284
+msgid "Dati strutturati"
+msgstr ""
+
+#: inc/class-admin.php:285
+msgid "Aggiungi ingredienti e allergeni al JSON-LD del prodotto"
+msgstr ""
+
+#: inc/class-admin.php:288
+msgid "Disinstallazione"
+msgstr ""
+
+#: inc/class-admin.php:290
+msgid ""
+"Alla disinstallazione elimina anche le informazioni alimentari dei prodotti"
+msgstr ""
+
+#: inc/class-admin.php:291
+msgid ""
+"Se disattivato (consigliato), ingredienti e allergeni restano nel database "
+"come contenuto del catalogo."
+msgstr ""
+
+#: inc/class-admin.php:295
+msgid "Salva impostazioni"
+msgstr ""
+
+#: inc/class-frontend.php:77
+msgid "Informazioni alimentari"
+msgstr ""
+
+#: inc/class-frontend.php:80
+msgid "Denominazione:"
+msgstr ""
+
+#: inc/class-frontend.php:83
+msgid "Ingredienti:"
+msgstr ""
+
+#: inc/class-frontend.php:87
+msgid "Allergeni presenti:"
+msgstr ""
+
+#: inc/class-frontend.php:94
+msgid "Allergeni:"
+msgstr ""
+
+#: inc/class-frontend.php:94
+msgid "il prodotto non contiene allergeni dell'Allegato II Reg. UE 1169/2011."
+msgstr ""
+
+#: inc/class-frontend.php:98
+msgid "Può contenere tracce di:"
+msgstr ""
+
+#: inc/class-frontend.php:101
+msgid "Quantità netta:"
+msgstr ""
+
+#: inc/class-frontend.php:104
+msgid "Conservazione:"
+msgstr ""
+
+#: inc/class-frontend.php:107
+msgid "Da consumarsi preferibilmente entro:"
+msgstr ""
+
+#: inc/class-frontend.php:113
+msgid "Operatore responsabile:"
+msgstr ""
+
+#: inc/class-frontend.php:131
+msgid "Dichiarazione nutrizionale (valori medi per 100 g)"
+msgstr ""
+
+#: inc/class-frontend.php:160
+msgid "Ingredienti"
+msgstr ""
+
+#: inc/class-frontend.php:167 inc/class-taxonomy.php:63
+#: inc/class-taxonomy.php:65
+msgid "Allergeni"
+msgstr ""
+
+#: inc/class-taxonomy.php:39
+msgid "Cereali contenenti glutine"
+msgstr ""
+
+#: inc/class-taxonomy.php:40
+msgid "Crostacei"
+msgstr ""
+
+#: inc/class-taxonomy.php:41
+msgid "Uova"
+msgstr ""
+
+#: inc/class-taxonomy.php:42
+msgid "Pesce"
+msgstr ""
+
+#: inc/class-taxonomy.php:43
+msgid "Arachidi"
+msgstr ""
+
+#: inc/class-taxonomy.php:44
+msgid "Soia"
+msgstr ""
+
+#: inc/class-taxonomy.php:45
+msgid "Latte e lattosio"
+msgstr ""
+
+#: inc/class-taxonomy.php:46
+msgid "Frutta a guscio"
+msgstr ""
+
+#: inc/class-taxonomy.php:47
+msgid "Sedano"
+msgstr ""
+
+#: inc/class-taxonomy.php:48
+msgid "Senape"
+msgstr ""
+
+#: inc/class-taxonomy.php:49
+msgid "Semi di sesamo"
+msgstr ""
+
+#: inc/class-taxonomy.php:50
+msgid "Anidride solforosa e solfiti"
+msgstr ""
+
+#: inc/class-taxonomy.php:51
+msgid "Lupini"
+msgstr ""
+
+#: inc/class-taxonomy.php:52
+msgid "Molluschi"
+msgstr ""
+
+#: inc/class-taxonomy.php:64
+msgid "Allergene"
+msgstr ""
+
+#: inc/class-taxonomy.php:66
+msgid "Cerca allergeni"
+msgstr ""
+
+#: inc/class-taxonomy.php:67
+msgid "Tutti gli allergeni"
+msgstr ""
+
+#: inc/class-taxonomy.php:68
+msgid "Modifica allergene"
+msgstr ""
+
+#: inc/class-taxonomy.php:69
+msgid "Aggiorna allergene"
+msgstr ""

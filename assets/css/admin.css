@@ -1,17 +1,28 @@
-/* DB Food Info — admin */
-.dbfi-metabox .dbfi-hint {
-	background: var(--db-bg);
-	border-left: 3px solid var(--db-accent);
-	border-radius: var(--db-radius);
-	padding: 8px 12px;
-	color: #3c434a;
+/**
+ * DB Food Info — stili admin (si appoggia a db-admin-ui.css).
+ */
+.dbfi-metabox .db-ui-notice {
+    border-radius: var(--db-radius-sm);
+    padding: 8px 12px;
+    margin: 8px 0 14px;
 }
-.dbfi-metabox .dbfi-req { color: #b00020; }
+.dbfi-metabox .db-ui-notice p { margin: 0; }
+.dbfi-metabox .db-ui-notice-info {
+    background: var(--db-primary-light);
+    border-left: 3px solid var(--db-primary);
+}
+.dbfi-metabox .db-ui-notice-warning {
+    background: var(--db-warning-light);
+    border-left: 3px solid var(--db-warning);
+    color: var(--db-warning-dark);
+}
+.dbfi-metabox .dbfi-req { color: var(--db-danger); }
 .dbfi-metabox details.dbfi-nutrition {
-	border: 1px solid var(--db-border);
-	border-radius: var(--db-radius);
-	padding: 8px 12px;
-	margin: 12px 0;
+    border: 1px solid var(--db-border);
+    border-radius: var(--db-radius-sm);
+    padding: 8px 12px;
+    margin: 12px 0;
+    background: var(--db-bg-subtle);
 }
 .dbfi-metabox details.dbfi-nutrition summary { cursor: pointer; }
-.dbfi-settings h1 { color: var(--db-primary); }
+.dbfi-settings h1 { color: var(--db-text); }
